@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typers Combat — Press Kit | Esoteric Games</title>
+<meta name="description" content="Press kit for Typers Combat, a typing-based combat game by Esoteric Games. Available on Steam, Epic Games Store, and Android.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #060810;
+    --bg-elevated: #0c1018;
+    --bg-card: #0f1520;
+    --cyan: #00e5ff;
+    --cyan-dim: #00a5b8;
+    --cyan-glow: rgba(0, 229, 255, 0.15);
+    --gold: #ffd740;
+    --red: #ff4444;
+    --pink: #ff2d6b;
+    --green: #69f0ae;
+    --purple: #b388ff;
+    --text: #c8d0e0;
+    --text-dim: #6a7590;
+    --text-bright: #e8ecf4;
+    --border: #1a2235;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+    --font-body: 'Space Grotesk', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(6,8,16,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+  }
+  nav .nav-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; height: 56px;
+  }
+  nav .logo {
+    font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600;
+    color: var(--cyan); letter-spacing: 0.08em; text-decoration: none;
+  }
+  nav .logo span { color: var(--text-dim); }
+  nav ul { list-style: none; display: flex; gap: 1.5rem; }
+  nav a {
+    color: var(--text-dim); text-decoration: none;
+    font-family: var(--font-mono); font-size: 0.75rem;
+    letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s;
+  }
+  nav a:hover { color: var(--cyan); }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 80vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    padding: 6rem 2rem 3rem; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); width: 700px; height: 700px;
+    background: radial-gradient(circle, var(--cyan-glow) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan);
+    letter-spacing: 0.2em; text-transform: uppercase;
+    border: 1px solid rgba(0,229,255,0.25); padding: 0.4rem 1.2rem;
+    border-radius: 2px; margin-bottom: 1.5rem; position: relative;
+    animation: fadeInDown 0.6s ease-out;
+  }
+  .hero-capsule {
+    max-width: 620px; width: 100%; border-radius: 6px;
+    border: 1px solid var(--border); margin-bottom: 2rem;
+    box-shadow: 0 0 60px rgba(0,229,255,0.08);
+    animation: fadeInDown 0.6s ease-out 0.1s both;
+    overflow: hidden;
+  }
+  .hero-capsule img { width: 100%; display: block; }
+  .hero-tagline {
+    font-size: 1.2rem; color: var(--text-dim); max-width: 550px;
+    margin-bottom: 2rem; animation: fadeInDown 0.6s ease-out 0.2s both;
+  }
+  .hero-meta {
+    display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;
+    font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);
+    margin-bottom: 2rem; animation: fadeInDown 0.6s ease-out 0.3s both;
+  }
+  .hero-meta strong { color: var(--text); }
+  .hero-buttons {
+    display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+    animation: fadeInDown 0.6s ease-out 0.4s both;
+  }
+
+  .characters-strip {
+    display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;
+    padding: 2rem 2rem 0; max-width: 700px; margin: 0 auto;
+    animation: fadeInDown 0.6s ease-out 0.5s both;
+  }
+  .characters-strip img {
+    width: 72px; height: 72px; border-radius: 4px;
+    border: 1px solid var(--border); transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .characters-strip img:hover {
+    transform: scale(1.15); box-shadow: 0 0 20px rgba(0,229,255,0.2);
+  }
+
+  /* ─── SECTIONS ─── */
+  section { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+  .section-label {
+    font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan);
+    letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.5rem;
+  }
+  .section-title {
+    font-family: var(--font-mono); font-size: 1.6rem; font-weight: 600;
+    color: var(--text-bright); margin-bottom: 2rem; padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ─── FACTSHEET ─── */
+  .factsheet-grid { display: grid; grid-template-columns: 280px 1fr; gap: 3rem; }
+  .fact-list { list-style: none; }
+  .fact-list li {
+    padding: 0.65rem 0; border-bottom: 1px solid var(--border);
+    display: flex; flex-direction: column; gap: 0.15rem;
+  }
+  .fact-label {
+    font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-dim);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .fact-value { color: var(--text-bright); font-size: 0.95rem; }
+  .fact-value a {
+    color: var(--cyan); text-decoration: none;
+    border-bottom: 1px solid transparent; transition: border-color 0.2s;
+  }
+  .fact-value a:hover { border-bottom-color: var(--cyan); }
+  .description-block p { margin-bottom: 1.2rem; color: var(--text); font-size: 0.95rem; }
+
+  /* ─── FEATURES ─── */
+  .features-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem;
+  }
+  .feature-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 4px; padding: 1.5rem; transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .feature-card:hover {
+    border-color: rgba(0,229,255,0.3); box-shadow: 0 0 20px rgba(0,229,255,0.05);
+  }
+  .feature-card .icon {
+    font-family: var(--font-mono); font-size: 1.2rem; margin-bottom: 0.75rem; display: block;
+  }
+  .feature-card h3 {
+    font-family: var(--font-mono); font-size: 0.9rem; font-weight: 600;
+    color: var(--text-bright); margin-bottom: 0.5rem;
+  }
+  .feature-card p { font-size: 0.85rem; color: var(--text-dim); line-height: 1.6; }
+
+  /* ─── TRAILER ─── */
+  .trailer-wrap {
+    position: relative; padding-bottom: 56.25%; height: 0;
+    border-radius: 6px; overflow: hidden; border: 1px solid var(--border);
+    box-shadow: 0 0 40px rgba(0,229,255,0.08);
+  }
+  .trailer-wrap iframe {
+    position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+  }
+
+  /* ─── SCREENSHOTS ─── */
+  .screenshot-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 1rem;
+  }
+  .screenshot-grid img {
+    width: 100%; border-radius: 4px; border: 1px solid var(--border);
+    transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; display: block;
+  }
+  .screenshot-grid img:hover {
+    transform: scale(1.02); box-shadow: 0 0 30px rgba(0,229,255,0.1);
+  }
+  .screenshot-label {
+    font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim);
+    margin-top: 0.4rem; letter-spacing: 0.05em;
+  }
+
+  /* ─── PRICING ─── */
+  .pricing-note { color: var(--text-dim); margin-bottom: 1.5rem; font-size: 0.9rem; }
+  .platform-pricing { margin-bottom: 2rem; }
+  .platform-pricing h3 {
+    font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-bright);
+    margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+  }
+  .platform-pricing h3 .pi { color: var(--cyan); margin-right: 0.5rem; }
+  .pricing-cards {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;
+  }
+  .price-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 4px; padding: 1.25rem; text-align: center; transition: border-color 0.3s;
+  }
+  .price-card:hover { border-color: rgba(0,229,255,0.3); }
+  .price-card .tier {
+    font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem;
+  }
+  .price-card .price {
+    font-family: var(--font-mono); font-size: 1.4rem; font-weight: 700;
+    color: var(--text-bright); margin-bottom: 0.4rem;
+  }
+  .price-card .price.free { color: var(--green); }
+  .price-card .desc { font-size: 0.78rem; color: var(--text-dim); line-height: 1.5; }
+  .price-card .includes {
+    font-family: var(--font-mono); font-size: 0.65rem; color: var(--gold); margin-top: 0.3rem;
+  }
+
+  /* ─── BUTTONS ─── */
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-family: var(--font-mono); font-size: 0.8rem;
+    padding: 0.65rem 1.4rem; border-radius: 3px;
+    text-decoration: none; letter-spacing: 0.05em; transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--cyan); color: var(--bg); border: 1px solid var(--cyan); font-weight: 600;
+  }
+  .btn-primary:hover { background: #33ebff; box-shadow: 0 0 20px rgba(0,229,255,0.3); }
+  .btn-outline { background: transparent; border: 1px solid var(--cyan); color: var(--cyan); }
+  .btn-outline:hover { background: rgba(0,229,255,0.1); box-shadow: 0 0 15px rgba(0,229,255,0.15); }
+  .btn-pink { border-color: var(--pink); color: var(--pink); }
+  .btn-pink:hover { background: rgba(255,45,107,0.1); box-shadow: 0 0 15px rgba(255,45,107,0.15); }
+  .btn-gold { border-color: var(--gold); color: var(--gold); }
+  .btn-gold:hover { background: rgba(255,215,64,0.1); box-shadow: 0 0 15px rgba(255,215,64,0.15); }
+
+  /* ─── CONTACT ─── */
+  .contact-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 4px; padding: 2rem; max-width: 500px;
+  }
+  .contact-card .contact-row { display: flex; gap: 1rem; align-items: baseline; padding: 0.5rem 0; }
+  .contact-card .cl {
+    font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan-dim);
+    text-transform: uppercase; letter-spacing: 0.1em; min-width: 80px;
+  }
+  .contact-card .cv { color: var(--text-bright); font-size: 0.95rem; }
+  .contact-card .cv a { color: var(--cyan); text-decoration: none; }
+
+  .about-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 4px; padding: 2rem; max-width: 700px;
+  }
+
+  footer {
+    text-align: center; padding: 3rem 2rem;
+    border-top: 1px solid var(--border); margin-top: 2rem;
+  }
+  footer p { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); }
+  footer a { color: var(--cyan-dim); text-decoration: none; }
+
+  .divider { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+  .divider hr { border: none; border-top: 1px solid var(--border); }
+
+  /* ─── LIGHTBOX ─── */
+  .lightbox {
+    display: none; position: fixed; inset: 0; z-index: 10000;
+    background: rgba(0,0,0,0.92); cursor: pointer;
+    justify-content: center; align-items: center; padding: 2rem;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img {
+    max-width: 95vw; max-height: 90vh; border-radius: 6px;
+    box-shadow: 0 0 60px rgba(0,229,255,0.15);
+  }
+  .lightbox-close {
+    position: fixed; top: 1.5rem; right: 2rem;
+    font-family: var(--font-mono); font-size: 1.5rem; color: var(--text-dim);
+    cursor: pointer; z-index: 10001; transition: color 0.2s;
+  }
+  .lightbox-close:hover { color: var(--cyan); }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 768px) {
+    .factsheet-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero { min-height: auto; padding: 7rem 1.5rem 3rem; }
+    .hero-meta { gap: 1rem; }
+    nav ul { gap: 0.75rem; }
+    nav a { font-size: 0.65rem; }
+    .features-grid { grid-template-columns: 1fr; }
+    .pricing-cards { grid-template-columns: 1fr 1fr; }
+    .screenshot-grid { grid-template-columns: 1fr; }
+    .characters-strip img { width: 56px; height: 56px; }
+  }
+  @media (max-width: 480px) {
+    .pricing-cards { grid-template-columns: 1fr; }
+    nav ul { display: none; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">ESOTERIC<span>_</span>GAMES</a>
+    <ul>
+      <li><a href="#factsheet">Factsheet</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#trailer">Trailer</a></li>
+      <li><a href="#screenshots">Screenshots</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-badge">// PRESS KIT</div>
+  <div class="hero-capsule">
+    <img src="images/store_capsule_main.png" alt="Typers Combat key art">
+  </div>
+  <p class="hero-tagline">Type to fight. Fight to survive. A fast-paced typing combat game with ASCII art characters — on Steam, Epic, and Android.</p>
+  <div class="hero-meta">
+    <span><strong>Developer</strong> Esoteric Games</span>
+    <span><strong>Platforms</strong> Steam &middot; Epic &middot; Android</span>
+    <span><strong>Release</strong> March 6, 2026</span>
+    <span><strong>Genre</strong> Typing Combat</span>
+  </div>
+  <div class="hero-buttons">
+    <a href="https://store.steampowered.com/app/4351960/" class="btn btn-primary" target="_blank">Steam Store &rarr;</a>
+    <a href="https://store.epicgames.com/" class="btn btn-outline btn-pink" target="_blank">Epic Games Store &rarr;</a>
+    <a href="https://play.google.com/store/apps/details?id=com.guyverphd.typerscombat" class="btn btn-outline btn-gold" target="_blank">Google Play &rarr;</a>
+  </div>
+  <div class="characters-strip">
+    <img src="images/raccoon.png" alt="Raccoon" title="Raccoon">
+    <img src="images/bit_crawler.png" alt="Bit Crawler" title="Bit Crawler">
+    <img src="images/cat.png" alt="Cat" title="Cat">
+    <img src="images/cyber_wolf.png" alt="Cyber Wolf" title="Cyber Wolf">
+    <img src="images/glitch_imp.png" alt="Glitch Imp" title="Glitch Imp">
+  </div>
+</header>
+
+<!-- FACTSHEET -->
+<section id="factsheet">
+  <div class="section-label">// 001</div>
+  <h2 class="section-title">Factsheet</h2>
+  <div class="factsheet-grid">
+    <div>
+      <ul class="fact-list">
+        <li><span class="fact-label">Developer</span><span class="fact-value">Esoteric Games (solo dev)</span></li>
+        <li><span class="fact-label">Release Date</span><span class="fact-value">March 6, 2026</span></li>
+        <li><span class="fact-label">Platforms</span><span class="fact-value">PC (Steam &amp; Epic), Android (Google Play)</span></li>
+        <li><span class="fact-label">Price</span><span class="fact-value">$5.99 on Steam/Epic (incl. Supporter Pack)<br>Free on Android</span></li>
+        <li><span class="fact-label">Genre</span><span class="fact-value">Typing / Combat / Action</span></li>
+        <li><span class="fact-label">Steam</span><span class="fact-value"><a href="https://store.steampowered.com/app/4351960/" target="_blank">Store Page &rarr;</a></span></li>
+        <li><span class="fact-label">Epic Games</span><span class="fact-value"><a href="https://store.epicgames.com/" target="_blank">Store Page &rarr;</a></span></li>
+        <li><span class="fact-label">Google Play</span><span class="fact-value"><a href="https://play.google.com/store/apps/details?id=com.guyverphd.typerscombat" target="_blank">Store Page &rarr;</a></span></li>
+        <li><span class="fact-label">Trailer</span><span class="fact-value"><a href="https://www.youtube.com/watch?v=cTTZazYkAds" target="_blank">YouTube &rarr;</a></span></li>
+        <li><span class="fact-label">Contact</span><span class="fact-value"><a href="mailto:guyverPhD@gmail.com">guyverPhD@gmail.com</a></span></li>
+        <li><span class="fact-label">Discord</span><span class="fact-value"><a href="https://discord.gg/M84GFkQEvN" target="_blank">Join Server &rarr;</a></span></li>
+      </ul>
+    </div>
+    <div class="description-block">
+      <p><strong style="color: var(--text-bright);">Typers Combat turns your keyboard into a weapon.</strong> In this fast-paced typing combat game, every word you type deals damage and every mistake costs you. Battle through multiple game modes designed to test your speed, accuracy, and endurance.</p>
+      <p>Built with a striking ASCII art aesthetic — cyan, gold, red, pink, and green characters blazing across dark backgrounds — the game delivers a uniquely retro-futuristic combat experience powered by procedural audio that reacts to your gameplay in real time.</p>
+      <p>Challenge friends asynchronously with the innovative <strong style="color: var(--cyan);">ghost code VS system</strong>: record your combat performance, share a code, and let others battle your ghost. No lobbies, no matchmaking queues — just pure skill comparison across time zones. Or jump into live ranked or unranked matches against friends and foes.</p>
+      <p>Customize your profile with unlockable ASCII art portraits, color themes, glow effects, titles, and badges. Launched simultaneously on Steam, Epic Games Store, and Android — making it one of the only typing combat games playable on mobile.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-label">// 002</div>
+  <h2 class="section-title">Features</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="icon" style="color: var(--red);">&#9876;</span>
+      <h3>Campaign Mode</h3>
+      <p>Battle through progressive waves of ASCII art enemies with increasing difficulty. Prestige system with 1.6x HP scaling for infinite replayability.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--cyan);">&#9819;</span>
+      <h3>Ghost Code VS</h3>
+      <p>Asynchronous multiplayer — record your performance, share a code, and challenge anyone to beat your ghost. No lobbies needed.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--pink);">&#9889;</span>
+      <h3>Live Multiplayer</h3>
+      <p>Real-time cross-platform, cross-play matchmaking. Climb the ranked leaderboards with ELO-based ratings, or jump into unranked endless mode with friends or randoms &mdash; PC and mobile players battle together.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--gold);">&#8734;</span>
+      <h3>Survival Mode</h3>
+      <p>Endless endurance challenge. How long can you last as waves intensify? Compete on global leaderboards.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--green);">&#9678;</span>
+      <h3>Daily Challenges &amp; Leaderboards</h3>
+      <p>Fresh challenges every day &mdash; Speed Blitz, Accuracy, and more. Compete on global leaderboards across every mode, track your stats, and see how you stack up against the community.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--purple);">&#9674;</span>
+      <h3>ASCII Art Characters</h3>
+      <p>A roster of distinctive enemies and player portraits built from ASCII characters. Raccoon, Bit Crawler, Cyber Wolf, Glitch Imp, Cat, Apex Dragon, and more.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--cyan);">&#9835;</span>
+      <h3>Procedural Audio</h3>
+      <p>Dynamic sound design that reacts to your typing and combat performance in real time. No two sessions sound the same.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--gold);">&#10022;</span>
+      <h3>Deep Customization</h3>
+      <p>Unlockable portraits, color themes, glow effects, border styles, titles, and badges. Make your profile your own.</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon" style="color: var(--green);">&#9743;</span>
+      <h3>Cross-Platform &amp; Cross-Play</h3>
+      <p>Available on Steam, Epic Games Store, and Android with a shared multiplayer ecosystem. PC and mobile players compete on the same leaderboards, match against each other live, and share ghost codes across all platforms.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- TRAILER -->
+<section id="trailer">
+  <div class="section-label">// 003</div>
+  <h2 class="section-title">Trailer</h2>
+  <div class="trailer-wrap">
+    <iframe src="https://www.youtube.com/embed/cTTZazYkAds" title="Typers Combat Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div style="margin-top: 1.25rem;">
+    <a href="https://drive.google.com/file/d/1JDv2rEXC3xwL-IRvKpWxnn0n-WNtTI53/view?usp=sharing" class="btn btn-outline" target="_blank">&darr; Download Trailer (MP4, 1080p)</a>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- SCREENSHOTS -->
+<section id="screenshots">
+  <div class="section-label">// 004</div>
+  <h2 class="section-title">Screenshots</h2>
+  <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1.5rem;">Click any image to view full size. All screenshots available for press use.</p>
+  <div class="screenshot-grid">
+    <div>
+      <img src="images/Screenshot_2026-02-16_181527.png" alt="Main menu showing all game modes" onclick="openLightbox(this)">
+      <div class="screenshot-label">Main Menu &mdash; Mode Selection</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_2026-02-16_181644.png" alt="Campaign mode gameplay" onclick="openLightbox(this)">
+      <div class="screenshot-label">Campaign &mdash; Typing Combat vs Bit Crawler</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_2026-02-16_181904.png" alt="Campaign mode with Data Sprite" onclick="openLightbox(this)">
+      <div class="screenshot-label">Campaign &mdash; Battle vs Data Sprite</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_2026-02-16_181929.png" alt="VS mode matchup screen" onclick="openLightbox(this)">
+      <div class="screenshot-label">VS Live &mdash; Ranked Matchup</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_2026-02-16_182029.png" alt="Ghost code system" onclick="openLightbox(this)">
+      <div class="screenshot-label">Ghost Code &mdash; Async Multiplayer</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_2026-02-19_065259.png" alt="Profile customization" onclick="openLightbox(this)">
+      <div class="screenshot-label">Profile &mdash; Customization &amp; Badges</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_2026-02-21_134632.png" alt="Practice mode" onclick="openLightbox(this)">
+      <div class="screenshot-label">Practice Mode &mdash; Free Typing</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_2026-02-21_134755.png" alt="Results screen" onclick="openLightbox(this)">
+      <div class="screenshot-label">Results &mdash; Post-Match Stats</div>
+    </div>
+    <div>
+      <img src="images/Screenshot_20260208_063338.png" alt="Mobile gameplay" onclick="openLightbox(this)">
+      <div class="screenshot-label">Android &mdash; Mobile Gameplay</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- KEY ART -->
+<section>
+  <div class="section-label">// 005</div>
+  <h2 class="section-title">Key Art &amp; Logos</h2>
+  <div class="screenshot-grid">
+    <div>
+      <img src="images/store_capsule_main.png" alt="Main capsule art" onclick="openLightbox(this)">
+      <div class="screenshot-label">Main Capsule</div>
+    </div>
+    <div>
+      <img src="images/store_capsule_header.png" alt="Header capsule art" onclick="openLightbox(this)">
+      <div class="screenshot-label">Header Capsule</div>
+    </div>
+  </div>
+  <div style="margin-top: 1.5rem;">
+    <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 0.75rem;">Character Portraits</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <img src="images/raccoon.png" alt="Raccoon" style="width:96px;height:96px;border-radius:4px;border:1px solid var(--border);cursor:pointer;" onclick="openLightbox(this)">
+      <img src="images/bit_crawler.png" alt="Bit Crawler" style="width:96px;height:96px;border-radius:4px;border:1px solid var(--border);cursor:pointer;" onclick="openLightbox(this)">
+      <img src="images/cat.png" alt="Cat" style="width:96px;height:96px;border-radius:4px;border:1px solid var(--border);cursor:pointer;" onclick="openLightbox(this)">
+      <img src="images/cyber_wolf.png" alt="Cyber Wolf" style="width:96px;height:96px;border-radius:4px;border:1px solid var(--border);cursor:pointer;" onclick="openLightbox(this)">
+      <img src="images/glitch_imp.png" alt="Glitch Imp" style="width:96px;height:96px;border-radius:4px;border:1px solid var(--border);cursor:pointer;" onclick="openLightbox(this)">
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-label">// 006</div>
+  <h2 class="section-title">Pricing &amp; Monetization</h2>
+  <p class="pricing-note">All gameplay content is included at every tier. DLC packs unlock cosmetic customization only &mdash; portraits, themes, glow effects, titles, and badges. No pay-to-win mechanics.</p>
+
+  <div class="platform-pricing">
+    <h3><span class="pi">&#9651;</span> Steam &amp; Epic Games Store</h3>
+    <div class="pricing-cards">
+      <div class="price-card">
+        <div class="tier">Base Game</div>
+        <div class="price">$5.99</div>
+        <div class="desc">All game modes, leaderboards, ghost code VS, daily challenges</div>
+        <div class="includes">+ Supporter Pack included</div>
+      </div>
+      <div class="price-card">
+        <div class="tier">Ultimate Pack</div>
+        <div class="price">+$3.99</div>
+        <div class="desc">All cosmetics including exclusive Glow Mode, extra portraits, premium themes</div>
+        <div class="includes">Upgrade DLC</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="platform-pricing">
+    <h3><span class="pi">&#9654;</span> Android (Google Play)</h3>
+    <div class="pricing-cards">
+      <div class="price-card">
+        <div class="tier">Base Game</div>
+        <div class="price free">FREE</div>
+        <div class="desc">All game modes, leaderboards, ghost code VS, daily challenges</div>
+      </div>
+      <div class="price-card">
+        <div class="tier">Supporter Pack</div>
+        <div class="price">$5.99</div>
+        <div class="desc">Cosmetic themes, portraits, and visual customization</div>
+      </div>
+      <div class="price-card">
+        <div class="tier">Ultimate Upgrade</div>
+        <div class="price">$3.99</div>
+        <div class="desc">Upgrade from Supporter to Ultimate with Glow Mode</div>
+      </div>
+      <div class="price-card">
+        <div class="tier">Ultimate Pack</div>
+        <div class="price">$9.99</div>
+        <div class="desc">Everything in one purchase &mdash; all cosmetic content</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- ABOUT -->
+<section>
+  <div class="section-label">// 007</div>
+  <h2 class="section-title">About Esoteric Games</h2>
+  <div class="about-card">
+    <p style="color: var(--text); font-size: 0.95rem; line-height: 1.8;">Esoteric Games is a solo indie developer studio focused on building unique games that don't quite exist yet. Typers Combat was born from a simple wish: a typing game that felt like a real fight &mdash; not just a speed test, but a full combat experience where your words-per-minute are your weapon. Built from scratch as a one-person project, the game blends retro ASCII art aesthetics with modern multiplayer systems across PC and mobile platforms.</p>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">// 008</div>
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-card">
+    <div class="contact-row"><span class="cl">Email</span><span class="cv"><a href="mailto:guyverPhD@gmail.com">guyverPhD@gmail.com</a></span></div>
+    <div class="contact-row"><span class="cl">Discord</span><span class="cv"><a href="https://discord.gg/M84GFkQEvN" target="_blank">discord.gg/M84GFkQEvN</a></span></div>
+    <div class="contact-row"><span class="cl">Steam</span><span class="cv"><a href="https://store.steampowered.com/app/4351960/" target="_blank">Store Page &rarr;</a></span></div>
+    <div class="contact-row"><span class="cl">Epic</span><span class="cv"><a href="https://store.epicgames.com/" target="_blank">Epic Games Store &rarr;</a></span></div>
+    <div class="contact-row"><span class="cl">Google Play</span><span class="cv"><a href="https://play.google.com/store/apps/details?id=com.guyverphd.typerscombat" target="_blank">Store Page &rarr;</a></span></div>
+  </div>
+  <p style="margin-top: 1.5rem; color: var(--text-dim); font-size: 0.85rem;">Steam review keys available on request. For press inquiries, email <a href="mailto:guyverPhD@gmail.com" style="color: var(--cyan); text-decoration: none;">guyverPhD@gmail.com</a></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Esoteric Games &mdash; <a href="https://esotericgames.dev">esotericgames.dev</a></p>
+</footer>
+
+<script>
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+
+</body>
+</html>
