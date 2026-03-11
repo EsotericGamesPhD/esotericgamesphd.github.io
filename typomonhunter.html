@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Typomon Hunter | Esoteric Games - Press Kit</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#060810;color:#e0e0e0;font-family:'Courier New',monospace;line-height:1.7}
+a{color:#00e5ff;text-decoration:none}
+a:hover{color:#ffd700}
+
+.hero{text-align:center;padding:40px 24px 20px}
+.hero img{max-width:100%;height:auto;border:2px solid #00e5ff33;margin-bottom:20px}
+.hero h1{font-size:2.4rem;color:#00e5ff;text-shadow:0 0 20px #00e5ff44;letter-spacing:4px;margin-bottom:6px}
+.hero .studio{color:#ffd700;font-size:0.85rem;letter-spacing:6px;margin-bottom:16px}
+.hero .tagline{color:#aaa;font-size:1rem;max-width:700px;margin:0 auto 24px}
+.hero .cta{display:inline-block;background:#00e5ff;color:#060810;padding:14px 36px;font-weight:bold;font-family:'Courier New',monospace;letter-spacing:3px;font-size:0.9rem;transition:all .2s;margin:8px}
+.hero .cta:hover{background:#ffd700;box-shadow:0 0 16px #ffd70044;color:#060810}
+
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+.divider{text-align:center;color:#00e5ff33;margin:40px 0;letter-spacing:8px;font-size:0.9rem}
+
+/* Factsheet */
+.factsheet{display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;margin:30px 0;padding:24px;border:1px solid #00e5ff22;background:#0a0c18}
+.factsheet dt{color:#ffd700;font-size:0.8rem;letter-spacing:2px}
+.factsheet dd{color:#ccc;font-size:0.9rem;margin-bottom:12px}
+@media(max-width:600px){.factsheet{grid-template-columns:1fr}}
+
+/* Section headers */
+h2{color:#ffd700;font-size:1.1rem;letter-spacing:3px;margin:36px 0 16px;text-align:center}
+h3{color:#00e5ff;font-size:0.95rem;letter-spacing:2px;margin:24px 0 10px}
+
+/* Description */
+.desc{color:#ccc;font-size:0.9rem;max-width:800px;margin:0 auto 20px;text-align:center}
+
+/* Feature cards */
+.features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.feat{border:1px solid #00e5ff22;padding:16px;background:#0a0c18}
+.feat .icon{font-size:1.2rem;margin-bottom:6px}
+.feat .title{color:#00e5ff;font-size:0.85rem;letter-spacing:2px;font-weight:bold;margin-bottom:6px}
+.feat .body{color:#aaa;font-size:0.8rem;line-height:1.6}
+@media(max-width:600px){.features{grid-template-columns:1fr}}
+
+/* Screenshots */
+.screenshots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.screenshots img{width:100%;height:auto;cursor:pointer;border:1px solid #00e5ff22;transition:all .2s}
+.screenshots img:hover{border-color:#00e5ff;box-shadow:0 0 12px #00e5ff33}
+@media(max-width:600px){.screenshots{grid-template-columns:1fr}}
+
+/* Lightbox */
+.lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.92);z-index:999;justify-content:center;align-items:center;cursor:pointer}
+.lightbox.active{display:flex}
+.lightbox img{max-width:92%;max-height:92%;object-fit:contain}
+
+/* Key features list */
+.key-features{columns:2;column-gap:30px;margin:20px 0;padding:0 10px}
+.key-features li{color:#ccc;font-size:0.8rem;margin-bottom:8px;list-style:none;padding-left:16px;position:relative}
+.key-features li::before{content:">";color:#00e5ff;position:absolute;left:0}
+@media(max-width:600px){.key-features{columns:1}}
+
+/* Trailer */
+.trailer{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:20px 0}
+.trailer iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+/* Contact */
+.contact{text-align:center;margin:30px 0;padding:24px;border:1px solid #00e5ff22;background:#0a0c18}
+.contact p{color:#aaa;font-size:0.85rem;margin:6px 0}
+.contact a{color:#00e5ff}
+
+footer{text-align:center;padding:40px 24px;color:#555;font-size:0.75rem}
+footer a{color:#777}
+footer a:hover{color:#00e5ff}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="th_store_capsule_main.png" alt="Typomon Hunter Key Art">
+    <h1>TYPOMON HUNTER</h1>
+    <div class="studio">ESOTERIC GAMES</div>
+    <p class="tagline">A typing roguelike monster collector where every keystroke counts. Explore procedurally generated dungeons, battle wild Typomon by typing sentences in real-time, and catch them to build your ultimate team.</p>
+    <a href="https://store.steampowered.com/app/4429150/Typomon_Hunter/" target="_blank" class="cta">WISHLIST ON STEAM</a>
+</div>
+
+<div class="container">
+
+<div class="divider">═══════════════════</div>
+
+<!-- FACTSHEET -->
+<h2>FACTSHEET</h2>
+<dl class="factsheet">
+    <dt>DEVELOPER</dt>
+    <dd>Esoteric Games (Solo Developer)</dd>
+    <dt>PLATFORMS</dt>
+    <dd>PC (Steam)</dd>
+    <dt>GENRE</dt>
+    <dd>Typing Roguelike / Monster Collector</dd>
+    <dt>STATUS</dt>
+    <dd>Coming Soon (Wishlist Now)</dd>
+    <dt>ENGINE</dt>
+    <dd>React / Electron</dd>
+    <dt>PRICE</dt>
+    <dd>TBA</dd>
+    <dt>PLAYERS</dt>
+    <dd>Single Player + VS Battle Mode</dd>
+    <dt>WEBSITE</dt>
+    <dd><a href="https://esotericgames.dev">esotericgames.dev</a></dd>
+</dl>
+
+<div class="divider">═══════════════════</div>
+
+<!-- STORY -->
+<h2>THE STORY</h2>
+<p class="desc">A phishing link has unleashed digital chaos. Dr. Professor -- the world's most reckless professional -- clicked a suspicious email and infected the entire system with digital monsters. Now it's up to you, a skilled typist with zero patience, to dive into the corrupted network, defeat the Hoople Organization, and type your way to the source of the infection.</p>
+
+<div class="divider">═══════════════════</div>
+
+<!-- FEATURES -->
+<h2>FEATURES</h2>
+<div class="features">
+    <div class="feat">
+        <div class="title">TYPING IS YOUR WEAPON</div>
+        <div class="body">This isn't a typing minigame slapped onto a battle screen. Typing IS the combat system. Your WPM determines damage output. Typos hurt your own team. Speed kills -- literally. Build combos through flawless sentences, trigger sneak attacks with split-second typing challenges, and race the clock before the enemy strikes back.</div>
+    </div>
+    <div class="feat">
+        <div class="title">CATCH 'EM, TRAIN 'EM, FUSE 'EM</div>
+        <div class="body">Collect 90+ species of Typomon across 8 elemental types (Science, Tech, Lore, Myth, Arcane, Nature, History, Combat), each with unique abilities. Evolve your team through typing milestones, forge words from dropped letters to boost stats, or fuse two Typomon into a powerful dual-type hybrid with the Data Splice system.</div>
+    </div>
+    <div class="feat">
+        <div class="title">ROGUELIKE DUNGEON RUNS</div>
+        <div class="body">Descend through procedurally generated floors with fog of war, trapped corridors, locked doors, and hidden treasure. Face 8 elemental bosses, battle the Hoople Organization's malware, solve puzzles, and push deeper into increasingly dangerous biomes -- from Digital Archives to the Void Nexus.</div>
+    </div>
+    <div class="feat">
+        <div class="title">DEEP META-PROGRESSION</div>
+        <div class="body">Between runs, bank your Typomon to the Hard Drive for safekeeping. Unlock and equip 30+ accessories with party-wide passive bonuses. Complete rotating quests for gold rewards. Browse the Hoople Shop for portraits, titles, name colors, and borders.</div>
+    </div>
+    <div class="feat">
+        <div class="title">VS BATTLE MODE</div>
+        <div class="body">Test your typing speed against 36 CPU opponents across an 8-tier ELO ranking system -- from Unranked all the way to Apex. Bring your best team, your fastest fingers, and climb the ladder. Real-time PVP coming soon.</div>
+    </div>
+    <div class="feat">
+        <div class="title">GLITCH MODE</div>
+        <div class="body">Activate Glitch Modes -- roguelike mutators that twist the rules in brutal ways. Enemies with +60% HP? A roster cap of one? Each glitch cranks up the difficulty and the rewards.</div>
+    </div>
+</div>
+
+<div class="divider">═══════════════════</div>
+
+<!-- KEY FEATURES LIST -->
+<h2>AT A GLANCE</h2>
+<ul class="key-features">
+    <li>88+ Typomon species with unique abilities</li>
+    <li>8 elemental types with full effectiveness chart</li>
+    <li>5 rarity tiers plus ultra-rare Rainbow variants</li>
+    <li>Over 10,000 typing sentences across 8 categories</li>
+    <li>Evolution, Lexiforge word forging, and Data Splice fusion</li>
+    <li>6-tier Bond system with your team</li>
+    <li>Procedural dungeons with 16 themed biomes</li>
+    <li>30+ tiered accessories with passive effects</li>
+    <li>40+ rotating quests across 5 difficulty tiers</li>
+    <li>10 Glitch Modes with 3 severity levels each</li>
+    <li>VS Battle Mode with ELO ranking</li>
+    <li>55 vanity shop items</li>
+    <li>Retro pixel art with hacker/terminal aesthetic</li>
+    <li>Procedural sound effects and synthwave soundtrack</li>
+    <li>Runs entirely offline</li>
+</ul>
+
+<div class="divider">═══════════════════</div>
+
+<!-- SCREENSHOTS -->
+<h2>SCREENSHOTS</h2>
+<div class="screenshots">
+    <img src="Screenshot_2026-03-03_125135.png" alt="Dungeon Exploration" onclick="openLB(this)">
+    <img src="Screenshot_2026-03-03_125231.png" alt="Battle - Mossbyte" onclick="openLB(this)">
+    <img src="Screenshot_2026-03-03_125413.png" alt="Battle - Hexfly" onclick="openLB(this)">
+    <img src="Screenshot_2026-03-03_125456.png" alt="Data Splice System" onclick="openLB(this)">
+    <img src="Screenshot_2026-03-03_125535.png" alt="Splice Complete" onclick="openLB(this)">
+    <img src="Screenshot_2026-03-03_125642.png" alt="Lexiforge Word Crafting" onclick="openLB(this)">
+    <img src="Screenshot_2026-03-03_125755.png" alt="The Shop" onclick="openLB(this)">
+    <img src="Screenshot_2026-03-03_125828.png" alt="VS CPU Battle" onclick="openLB(this)">
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lb" onclick="closeLB()">
+    <img id="lbImg" src="" alt="">
+</div>
+
+<div class="divider">═══════════════════</div>
+
+<!-- TRAILER -->
+<!--
+<h2>TRAILER</h2>
+<div class="trailer">
+    <iframe src="https://www.youtube.com/embed/YOUR_TRAILER_ID" allowfullscreen></iframe>
+</div>
+<div class="divider">═══════════════════</div>
+-->
+
+<!-- ABOUT -->
+<h2>ABOUT ESOTERIC GAMES</h2>
+<p class="desc">Esoteric Games is an independent solo-developer studio creating typing-based games with deep gameplay systems and retro ASCII aesthetics. Also the creator of Typers Combat, available on Steam, Epic Games Store, and Android.</p>
+
+<div class="divider">═══════════════════</div>
+
+<!-- CONTACT -->
+<div class="contact">
+    <h2 style="margin-top:0">CONTACT</h2>
+    <p>Email: <a href="mailto:guyverphd@gmail.com">guyverphd@gmail.com</a></p>
+    <p>Discord: <a href="https://discord.gg/M84GFkQEvN" target="_blank">discord.gg/M84GFkQEvN</a></p>
+    <p>Steam: <a href="https://store.steampowered.com/app/4429150/Typomon_Hunter/" target="_blank">Typomon Hunter on Steam</a></p>
+    <p>Studio: <a href="https://esotericgames.dev" target="_blank">esotericgames.dev</a></p>
+</div>
+
+</div><!-- /container -->
+
+<footer>
+    &copy; 2026 Esoteric Games. All rights reserved.<br>
+    <a href="https://www.freeprivacypolicy.com/live/237eccd3-9c7f-4d4c-9cdb-c9ab7cb95fb4" target="_blank">Privacy Policy</a> &middot;
+    <a href="index.html">Home</a> &middot;
+    <a href="typerscombat.html">Typers Combat</a>
+</footer>
+
+<script>
+function openLB(el){var lb=document.getElementById('lb');document.getElementById('lbImg').src=el.src;lb.classList.add('active')}
+function closeLB(){document.getElementById('lb').classList.remove('active')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()})
+</script>
+</body>
+</html>
