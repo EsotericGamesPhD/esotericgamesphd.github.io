@@ -1,0 +1,108 @@
+---
+layout: default
+body_class: kit
+---
+{%- assign g = page -%}
+<article class="kit-page" style="--accent:{{ g.accent }}">
+  <header class="kit-hero">
+    <div class="kit-hero-inner">
+      <div class="kit-art frame" id="art-{{ g.slug }}">{% include art.html game=g %}</div>
+      <div class="kit-intro">
+        <h1>{{ g.title }}{% if g.subtitle %}<span class="subtitle">{{ g.subtitle }}</span>{% endif %}</h1>
+        <p class="kit-hook">{{ g.hook }}</p>
+        <div class="actions">
+          {% include store-button.html game=g %}
+          {%- if g.trailers %}
+          <a class="btn ghost" href="#trailers">Trailers</a>
+          {%- endif %}
+          {%- if g.steam %}
+          <a class="btn ghost" href="#assets">Download assets</a>
+          {%- endif %}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="kit-body">
+    <section class="kit-facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">Fact sheet</h2>
+      <dl class="facts facts--stack">
+        <div><dt>Developer</dt><dd>Esoteric Games (solo developer)</dd></div>
+        <div><dt>Publisher</dt><dd>Esoteric Games</dd></div>
+        <div><dt>Status</dt><dd>{{ g.status }}</dd></div>
+        <div><dt>Release</dt><dd>{{ g.release }}</dd></div>
+        <div><dt>Platforms</dt><dd>{{ g.platforms }}</dd></div>
+        <div><dt>Price</dt><dd>{{ g.price }}</dd></div>
+        <div><dt>Genre</dt><dd>{{ g.genre }}</dd></div>
+        {%- if g.stores %}
+        <div><dt>Stores</dt><dd>{% for s in g.stores %}<a href="{{ s.url }}">{{ s.label }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd></div>
+        {%- endif %}
+        {%- if g.demo %}
+        <div><dt>Demo</dt><dd>Free demo on the Steam page</dd></div>
+        {%- endif %}
+        <div><dt>Community</dt><dd><a href="{{ g.discord | default: site.studio.discord }}">Discord</a></dd></div>
+        <div><dt>Press contact</dt><dd><a href="mailto:{{ site.studio.email }}?subject={{ g.title | uri_escape }}%20press">{{ site.studio.email }}</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="kit-about" aria-labelledby="about-title">
+      <h2 id="about-title">About the game</h2>
+      {%- if g.summary %}
+      <p class="kit-summary">{{ g.summary }}</p>
+      {%- else %}
+      <p class="kit-summary">{{ g.title }} is in development. A Steam page, trailer and full press kit are on the way. Email <a href="mailto:{{ site.studio.email }}">{{ site.studio.email }}</a> to hear first.</p>
+      {%- endif %}
+      {%- if g.features %}
+      <h3>Highlights</h3>
+      <ul class="features">
+        {%- for f in g.features %}
+        <li>{{ f }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+      {%- if g.gore %}<p class="note"><strong>Content note:</strong> {{ g.gore }}</p>{% endif %}
+      {%- if g.note %}<p class="note">{{ g.note }}</p>{% endif %}
+    </section>
+  </div>
+
+  {%- if g.trailers %}
+  <section class="kit-section" id="trailers" aria-labelledby="trailers-title">
+    <h2 id="trailers-title">Trailers</h2>
+    <div class="trailer-grid">
+      {%- for t in g.trailers %}
+      {% include trailer.html id=t.id title=t.title %}
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if g.steam %}
+  <section class="kit-section" id="assets" aria-labelledby="assets-title">
+    <h2 id="assets-title">Screenshots and art</h2>
+    <p class="muted">Select a screenshot to download it at full size (1920 x 1080).</p>
+    <ul class="shots plain">
+      {%- for i in (1..4) %}
+      <li><a class="frame" href="/assets/games/{{ g.slug }}/press/screenshot-{{ i }}.jpg" download><img src="/assets/games/{{ g.slug }}/shot-{{ i }}.webp" alt="{{ g.title }} screenshot {{ i }}" width="800" height="450" loading="lazy"></a></li>
+      {%- endfor %}
+    </ul>
+    <ul class="plain downloads">
+      <li><a href="/assets/games/{{ g.slug }}/press/capsule-616x353.jpg" download>Capsule art, JPG, 616 x 353</a></li>
+      <li><a href="/assets/games/{{ g.slug }}/press/header-460x215.jpg" download>Header art, JPG, 460 x 215</a></li>
+      {%- for a in g.extra_assets %}
+      <li><a href="/assets/games/{{ g.slug }}/{{ a.file }}" download>{{ a.label }}, WebP</a></li>
+      {%- endfor %}
+      <li><a href="/assets/brand/esoteric-games-logo.png" download>Esoteric Games logo, PNG</a></li>
+    </ul>
+  </section>
+  {%- endif %}
+
+  <nav class="kit-more" aria-label="More games">
+    <h2>More strange ideas</h2>
+    <ul class="plain">
+      {%- assign others = site.games | sort: "order" -%}
+      {%- for o in others %}{% unless o.slug == g.slug %}
+      <li style="--accent:{{ o.accent }}"><a href="{{ o.url }}"><svg class="sparkle" aria-hidden="true"><use href="#sparkle"/></svg>{{ o.short | default: o.title }}</a></li>
+      {%- endunless %}{% endfor %}
+    </ul>
+  </nav>
+</article>

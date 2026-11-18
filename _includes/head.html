@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- capture page_title -%}{% if page.layout == 'game' %}{{ page.title }} press kit | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}{%- endcapture -%}
+{%- capture page_desc -%}{% if page.summary %}{{ page.summary | strip_newlines }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description | strip_newlines }}{% endif %}{%- endcapture -%}
+{%- if page.layout == 'game' and page.steam -%}{%- capture og_image -%}{{ site.url }}/assets/games/{{ page.slug }}/press/capsule-616x353.jpg{%- endcapture -%}{%- else -%}{%- capture og_image -%}{{ site.url }}/assets/brand/og.jpg{%- endcapture -%}{%- endif -%}
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc | escape }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page_desc | escape }}">
+<meta property="og:image" content="{{ og_image }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#07091b">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/brand/favicon-96.png" sizes="96x96">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/barlow-semi-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>

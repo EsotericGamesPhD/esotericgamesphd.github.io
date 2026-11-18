@@ -1,0 +1,10 @@
+{%- assign g = include.game -%}
+{%- if g.steam -%}
+<img src="/assets/games/{{ g.slug }}/capsule.webp" alt="{{ g.title }} key art" width="616" height="353"{% if include.lazy %} loading="lazy"{% endif %}>
+{%- else -%}
+<span class="art-placeholder" role="img" aria-label="{{ g.title }}: art coming soon">
+  <svg class="sparkle s1" aria-hidden="true"><use href="#sparkle"/></svg>
+  <svg class="sparkle s2" aria-hidden="true"><use href="#sparkle"/></svg>
+  <span class="art-placeholder-name">{{ g.title }}</span>
+</span>
+{%- endif -%}

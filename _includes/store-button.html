@@ -1,0 +1,4 @@
+{%- assign g = include.game -%}
+{%- if g.stores -%}
+<a class="btn" href="{{ g.stores[0].url }}">{% if g.band == 'out' %}Buy on Steam{% else %}Wishlist on Steam{% endif %}</a>
+{%- endif -%}

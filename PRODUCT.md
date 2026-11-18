@@ -29,7 +29,7 @@ A studio known for strange ideas: concepts specific enough that no neighboring s
 
 ## Capabilities and Constraints
 
-Catalog (source: YouTube channel descriptions as of 2026-11-17, the current site, and the developer). The catalog grows often; more games are expected.
+Catalog (source: YouTube channel descriptions as of 2026-11-17, the current site, and the developer). The catalog grows often. Unannounced games stay out of this repository (it is public) until the developer announces them.
 
 | Game | Status | Store | Trailer(s) on YouTube |
 |---|---|---|---|
@@ -41,8 +41,6 @@ Catalog (source: YouTube channel descriptions as of 2026-11-17, the current site
 | Graftlands | Coming to Early Access. Body-grid auto-battler: 400+ parts, 22 starting mutants | Steam 5551850 | GTLaHuImpvQ (gameplay) |
 | Collateral Glory | 2-player online co-op mech satire ("two pilots, one mech") | OPEN: no store link found | BnDokx4N1RE (official), h-9aV_8XlKY (finishers) |
 | Queenright | Beekeeping simulator | OPEN: no store link found | 7BS-K1jDF4w (announcement), PT_3qP_GjfI |
-| Gacha Gacha Pon! | Steam page pending (not live yet). OPEN: description | Pending | none |
-| Untitled Viking game | A Viking with a shotgun. OPEN: name, status, description | OPEN | none |
 
 Non-game project, confirmed to appear on the site in its own area (not mixed into the games):
 
@@ -54,7 +52,6 @@ Constraints:
 - Privacy.html exists; the site footer links an external privacy policy instead.
 
 Open decisions:
-- Store links and status for Collateral Glory and Queenright; description for Gacha Gacha Pon!; name and details for the Viking game.
 - Which Discord invite is canonical: the site uses discord.gg/M84GFkQEvN; channel descriptions use discord.gg/4w6Qth93Pk (Graftlands) and discord.gg/82p23Fguj2 (Synthient). Possibly one server per project.
 - Whether every game gets a full press kit page or a shared kit format.
 
@@ -69,7 +66,8 @@ Open decisions:
 
 - Trailers and Shorts on YouTube (IDs above).
 - Key art and logos in assets/ for Typers Combat, Typomon Hunter and Outbreak: Type Z; capsules, screenshots and creature art in images/ (mostly Typers Combat and Typomon Hunter).
-- No local art yet for Typers Combat 2, Splatterdunk, Graftlands, Collateral Glory, Queenright, Gacha Gacha Pon! or Synthient. Steam capsules and YouTube thumbnails exist publicly but must be supplied or approved by the user.
+- Steam capsule, header and screenshots for all eight Steam games in assets/games/<slug>/ (sourced from the developer's own Steam pages, 2026-11-18). Trailer posters in assets/posters/ (from the developer's YouTube thumbnails).
+- New studio logo and YouTube banner in assets/brand/ (supplied by the developer).
 - Press kit facts in typerscombat.html and typomonhunter.html (solo dev, release date, pricing).
 - No press quotes, review scores, awards, sales or player counts on record. Do not invent any.
 

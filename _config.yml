@@ -1,0 +1,35 @@
+title: Esoteric Games
+tagline: Indie games and other strange ideas
+description: >-
+  Esoteric Games is a solo indie studio making strange ideas into games: typing fighters,
+  a monster-catching roguelike, a beekeeping simulator, mutant basketball, a two-pilot mech
+  satire and more. Trailers, facts and press kits for every game.
+url: https://esotericgames.dev
+baseurl: ""
+lang: en
+
+studio:
+  email: guyverphd@esotericgames.dev
+  discord: https://discord.gg/M84GFkQEvN
+  youtube: https://www.youtube.com/channel/UCsA1kzsv3Z-x2M4e2IMPnbg
+  steam: https://store.steampowered.com/search/?developer=Esoteric%20Games
+  privacy: https://www.freeprivacypolicy.com/live/237eccd3-9c7f-4d4c-9cdb-c9ab7cb95fb4
+
+# Every game is one file in _games/. Its press kit is generated at /games/<file-name>/.
+collections:
+  games:
+    output: true
+    permalink: /games/:name/
+
+defaults:
+  - scope: { path: "", type: games }
+    values: { layout: game }
+
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - "*.webp.json"
