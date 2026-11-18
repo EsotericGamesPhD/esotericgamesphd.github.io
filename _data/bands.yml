@@ -1,0 +1,9 @@
+# The constellation's rows, nearest to release first. Each game's `band` must match an id here.
+- id: out
+  label: Out now
+- id: soon
+  label: Coming soon
+- id: next
+  label: Coming 2027
+- id: works
+  label: In the works

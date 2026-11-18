@@ -1,0 +1,9 @@
+{%- comment -%} A YouTube trailer that loads only when played. Without JavaScript it is a link to YouTube. {%- endcomment -%}
+<figure class="trailer">
+  <a class="trailer-play" href="https://www.youtube.com/watch?v={{ include.id }}" data-yt="{{ include.id }}" data-title="{{ include.title | escape }}">
+    <img src="/assets/posters/{{ include.id }}.webp" alt="" width="960" height="540" loading="lazy">
+    <svg class="play-icon" aria-hidden="true"><use href="#play"/></svg>
+    <span class="visually-hidden">Play {{ include.title }}</span>
+  </a>
+  <figcaption>{{ include.title }} <a href="https://www.youtube.com/watch?v={{ include.id }}">Open on YouTube</a></figcaption>
+</figure>
