@@ -362,6 +362,8 @@ p { margin: 0; }
 }
 
 @media (max-width: 440px) {
+  html:not(.js) .nav { flex-wrap: wrap; justify-content: flex-end; gap: 0 14px; min-width: 0; }
+  html:not(.js) .nav a { letter-spacing: 0.04em; padding: 12px 0; }
   .js .menu-toggle { display: inline-flex; }
   .js .nav {
     display: none; position: absolute; left: 0; right: 0; top: 100%;
