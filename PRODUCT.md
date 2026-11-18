@@ -29,7 +29,7 @@ A studio known for strange ideas: concepts specific enough that no neighboring s
 
 ## Capabilities and Constraints
 
-Catalog (source: YouTube channel descriptions as of 2026-11-17, plus the current site):
+Catalog (source: YouTube channel descriptions as of 2026-11-17, the current site, and the developer). The catalog grows often; more games are expected.
 
 | Game | Status | Store | Trailer(s) on YouTube |
 |---|---|---|---|
@@ -41,7 +41,8 @@ Catalog (source: YouTube channel descriptions as of 2026-11-17, plus the current
 | Graftlands | Coming to Early Access. Body-grid auto-battler: 400+ parts, 22 starting mutants | Steam 5551850 | GTLaHuImpvQ (gameplay) |
 | Collateral Glory | 2-player online co-op mech satire ("two pilots, one mech") | OPEN: no store link found | BnDokx4N1RE (official), h-9aV_8XlKY (finishers) |
 | Queenright | Beekeeping simulator | OPEN: no store link found | 7BS-K1jDF4w (announcement), PT_3qP_GjfI |
-| Gacha Gacha Pon! | OPEN: no description, status, store link or trailer found | OPEN | none |
+| Gacha Gacha Pon! | Steam page pending (not live yet). OPEN: description | Pending | none |
+| Untitled Viking game | A Viking with a shotgun. OPEN: name, status, description | OPEN | none |
 
 Non-game project, confirmed to appear on the site in its own area (not mixed into the games):
 
@@ -53,13 +54,14 @@ Constraints:
 - Privacy.html exists; the site footer links an external privacy policy instead.
 
 Open decisions:
-- Store links and status for Collateral Glory, Queenright and Gacha Gacha Pon!.
+- Store links and status for Collateral Glory and Queenright; description for Gacha Gacha Pon!; name and details for the Viking game.
 - Which Discord invite is canonical: the site uses discord.gg/M84GFkQEvN; channel descriptions use discord.gg/4w6Qth93Pk (Graftlands) and discord.gg/82p23Fguj2 (Synthient). Possibly one server per project.
 - Whether every game gets a full press kit page or a shared kit format.
 
 ## Brand Commitments
 
 - Studio name: Esoteric Games. Domain esotericgames.dev.
+- A new studio logo exists and replaces the current ESOTERIC//GAMES wordmark (file pending from the developer).
 - Contact: guyverphd@esotericgames.dev.
 - Each game has its own established key art and logo; game identities stay intact on the site.
 
