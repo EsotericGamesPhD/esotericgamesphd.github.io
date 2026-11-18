@@ -9,7 +9,7 @@ body_class: home
 
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-sky" aria-hidden="true">
-    {%- assign field = "4,14,9|11,62,6|17,31,12|23,82,7|29,8,6|36,48,9|41,90,5|47,22,7|53,70,10|58,12,5|62,40,6|67,86,8|72,26,11|77,58,6|83,9,8|87,44,5|91,76,10|95,30,7|98,62,5|33,66,5|50,4,8|70,96,6|14,96,5|80,92,7" | split: "|" -%}
+    {%- assign field = "4,14,14|11,62,8|17,31,20|23,82,10|29,8,7|36,48,12|41,90,6|47,22,9|53,70,16|58,12,6|62,40,7|67,86,22|72,26,13|77,58,7|83,9,18|87,44,6|91,76,12|95,30,26|98,62,6|33,66,6|50,4,10|70,96,8|14,96,7|80,92,9|7,44,6|26,58,9|44,34,5|64,5,12|89,18,5|97,88,11|20,4,6|2,80,10" | split: "|" -%}
     {%- for p in field -%}{%- assign xy = p | split: "," -%}
     <svg class="sparkle" style="left:{{ xy[0] }}%;top:{{ xy[1] }}%;--s:{{ xy[2] }}px;--d:{{ forloop.index | times: 0.37 | modulo: 4 }}s"><use href="#sparkle"/></svg>
     {%- endfor %}
@@ -84,7 +84,7 @@ body_class: home
     <li class="game-row" style="--accent:{{ game.accent }}">
       <a class="game-row-art frame" href="{{ game.url }}" tabindex="-1" aria-hidden="true">{% include art.html game=game lazy=true %}</a>
       <div class="game-row-main">
-        <h3><a href="{{ game.url }}">{{ game.title }}</a></h3>
+        <h3><a href="{{ game.url }}">{{ game.title }}</a>{% if game.subtitle %}<span class="row-sub">{{ game.subtitle }}</span>{% endif %}</h3>
         <p class="game-row-hook">{{ game.hook }}</p>
       </div>
       <dl class="facts">

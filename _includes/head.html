@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{%- capture page_title -%}{% if page.layout == 'game' %}{{ page.title }} press kit | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}{%- endcapture -%}
+<script>document.documentElement.classList.add("js")</script>
+{%- capture page_title -%}{% if page.layout == 'game' %}{{ page.title }}{% if page.subtitle %}: {{ page.subtitle }}{% endif %} press kit | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}{%- endcapture -%}
 {%- capture page_desc -%}{% if page.summary %}{{ page.summary | strip_newlines }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description | strip_newlines }}{% endif %}{%- endcapture -%}
 {%- if page.layout == 'game' and page.steam -%}{%- capture og_image -%}{{ site.url }}/assets/games/{{ page.slug }}/press/capsule-616x353.jpg{%- endcapture -%}{%- else -%}{%- capture og_image -%}{{ site.url }}/assets/brand/og.jpg{%- endcapture -%}{%- endif -%}
 <title>{{ page_title }}</title>

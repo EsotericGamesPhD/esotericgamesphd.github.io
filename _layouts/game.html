@@ -56,7 +56,7 @@ body_class: kit
       <h3>Highlights</h3>
       <ul class="features">
         {%- for f in g.features %}
-        <li>{{ f }}</li>
+        <li><svg class="sparkle" aria-hidden="true"><use href="#sparkle"/></svg>{{ f }}</li>
         {%- endfor %}
       </ul>
       {%- endif %}

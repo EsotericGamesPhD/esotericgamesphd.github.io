@@ -1,6 +1,6 @@
 ---
-title: "Typers Combat 2: Type Harder"
-short: Typers Combat 2
+title: Typers Combat 2
+subtitle: Type Harder
 order: 8
 band: next
 status: Coming 2027
