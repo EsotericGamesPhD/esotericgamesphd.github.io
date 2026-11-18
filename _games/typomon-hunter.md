@@ -12,14 +12,14 @@ steam: 4429150
 demo: true
 stores:
   - { label: Steam, url: "https://store.steampowered.com/app/4429150/" }
-hook: A typing roguelike where you catch monsters by typing.
+hook: A typing roguelike monster collector where every keystroke is combat.
 summary: >-
   A typing roguelike monster collector where every keystroke is combat. Type sentences to
   battle and catch 93 species of Typomon, explore procedural dungeons, evolve your team,
   forge words, fuse hybrids, and climb the VS Battle ladder, all powered by your
   words-per-minute.
 features:
-  - 93 species across 8 types, all redrawn in pixel art (the classic ASCII look is one setting away)
+  - 93 species across 8 types, all redrawn in pixel art
   - Your WPM is your damage, and typos hurt your own team
   - Procedural dungeons, a one-shot Daily Dungeon leaderboard and 10 levels of Ascension
   - Evolution, dual-type fusion, word forging and a rival hunter

@@ -11,7 +11,7 @@ accent: "#e3342f"
 steam: 5460140
 stores:
   - { label: Steam, url: "https://store.steampowered.com/app/5460140/" }
-hook: Two pilots, one 30-story mech, zero coordination.
+hook: Two pilots, one 30-story Walker, zero coordination.
 summary: >-
   Two pilots, one 30-story Walker, zero coordination. Each of you runs one leg and one arm:
   stride into the Civic District as one, trade punches with an Ultrafauna, hoist it overhead

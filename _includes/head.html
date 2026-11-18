@@ -3,7 +3,7 @@
 <script>document.documentElement.classList.add("js")</script>
 {%- capture page_title -%}{% if page.layout == 'game' %}{{ page.title }}{% if page.subtitle %}: {{ page.subtitle }}{% endif %} press kit | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}{%- endcapture -%}
 {%- capture page_desc -%}{% if page.summary %}{{ page.summary | strip_newlines }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description | strip_newlines }}{% endif %}{%- endcapture -%}
-{%- if page.layout == 'game' and page.steam -%}{%- capture og_image -%}{{ site.url }}/assets/games/{{ page.slug }}/press/capsule-616x353.jpg{%- endcapture -%}{%- else -%}{%- capture og_image -%}{{ site.url }}/assets/brand/og.jpg{%- endcapture -%}{%- endif -%}
+{%- if page.layout == 'game' and page.steam -%}{%- capture og_image -%}{{ site.url }}/assets/games/{{ page.slug }}/press/{{ page.slug }}-main-capsule-1232x706.jpg{%- endcapture -%}{%- else -%}{%- capture og_image -%}{{ site.url }}/assets/brand/og.jpg{%- endcapture -%}{%- endif -%}
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc | escape }}">
 <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
@@ -16,7 +16,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#07091b">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="/assets/brand/favicon-96.png" sizes="96x96">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/barlow-semi-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/barlow-400.woff2" as="font" type="font/woff2" crossorigin>

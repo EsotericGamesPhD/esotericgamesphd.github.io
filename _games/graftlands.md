@@ -13,7 +13,7 @@ steam: 5551850
 discord: https://discord.gg/4w6Qth93Pk
 stores:
   - { label: Steam, url: "https://store.steampowered.com/app/5551850/Graftlands/" }
-hook: "A body-grid auto-battler: your mutant's body is the inventory."
+hook: Graft stolen limbs, organs and weapons onto your mutant. Its body is the inventory.
 summary: >-
   Graft stolen limbs, organs and weapons onto your mutant. Its body is the inventory: every
   part takes a real slot on its body and changes how it fights. Then watch it tear through

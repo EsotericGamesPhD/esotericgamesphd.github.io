@@ -39,8 +39,8 @@ Catalog (source: YouTube channel descriptions as of 2026-11-17, the current site
 | Typers Combat 2: Type Harder | Coming 2027. 3D typing fighting game: story mode, 10 bonus stages, custom fighter, 90+ executions | Steam 5431760 | VSwJLIRWDoU (official, gore off) |
 | Splatterdunk | Coming Q2 2027. 90s-arcade mutant monster basketball, 2v2 or 3v3, trick dunks, fatalities, up to 6 local players | Steam 5535250 | G5AJTYUbXP0 |
 | Graftlands | Coming to Early Access. Body-grid auto-battler: 400+ parts, 22 starting mutants | Steam 5551850 | GTLaHuImpvQ (gameplay) |
-| Collateral Glory | 2-player online co-op mech satire ("two pilots, one mech") | OPEN: no store link found | BnDokx4N1RE (official), h-9aV_8XlKY (finishers) |
-| Queenright | Beekeeping simulator | OPEN: no store link found | 7BS-K1jDF4w (announcement), PT_3qP_GjfI |
+| Collateral Glory | Coming soon. 2-player online co-op mech satire | Steam 5460140 | BnDokx4N1RE (official), h-9aV_8XlKY (finishers) |
+| Queenright: A Beekeeping Simulator | Coming soon | Steam 5431710 | 7BS-K1jDF4w (announcement), PT_3qP_GjfI |
 
 Non-game project, confirmed to appear on the site in its own area (not mixed into the games):
 
@@ -52,7 +52,6 @@ Constraints:
 - Privacy.html exists; the site footer links an external privacy policy instead.
 
 Open decisions:
-- Which Discord invite is canonical: the site uses discord.gg/M84GFkQEvN; channel descriptions use discord.gg/4w6Qth93Pk (Graftlands) and discord.gg/82p23Fguj2 (Synthient). Possibly one server per project.
 - Whether every game gets a full press kit page or a shared kit format.
 
 ## Brand Commitments
@@ -60,14 +59,16 @@ Open decisions:
 - Studio name: Esoteric Games. Domain esotericgames.dev.
 - A new studio logo exists and replaces the current ESOTERIC//GAMES wordmark (file pending from the developer).
 - Contact: guyverphd@esotericgames.dev.
+- Discord (confirmed 2026-11-17): studio server discord.gg/M84GFkQEvN is the site default; Graftlands uses discord.gg/4w6Qth93Pk, Splatterdunk discord.gg/hpmaJrXQBK, Synthient discord.gg/82p23Fguj2.
+- Copy rule (confirmed 2026-11-17): game copy comes only from the developer's pitches or the live Steam store pages. Do not add features that are not listed there.
 - Each game has its own established key art and logo; game identities stay intact on the site.
 
 ## Evidence on Hand
 
 - Trailers and Shorts on YouTube (IDs above).
 - Key art and logos in assets/ for Typers Combat, Typomon Hunter and Outbreak: Type Z; capsules, screenshots and creature art in images/ (mostly Typers Combat and Typomon Hunter).
-- Steam capsule, header and screenshots for all eight Steam games in assets/games/<slug>/ (sourced from the developer's own Steam pages, 2026-11-18). Trailer posters in assets/posters/ (from the developer's YouTube thumbnails).
-- New studio logo and YouTube banner in assets/brand/ (supplied by the developer).
+- Official Steam art for all eight games (main capsule, header capsule, library capsule, library hero) from the developer's update pack, plus Steam screenshots, in assets/games/<slug>/. Trailer posters in assets/posters/ (from the developer's YouTube thumbnails).
+- Official studio logo (1254, 512, 180, 32 px; opaque, navy background, no transparent or SVG version yet) and YouTube banner in assets/brand/.
 - Press kit facts in typerscombat.html and typomonhunter.html (solo dev, release date, pricing).
 - No press quotes, review scores, awards, sales or player counts on record. Do not invent any.
 

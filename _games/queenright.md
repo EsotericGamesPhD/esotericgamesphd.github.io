@@ -12,7 +12,7 @@ accent: "#e9c46a"
 steam: 5431710
 stores:
   - { label: Steam, url: "https://store.steampowered.com/app/5431710/" }
-hook: Learn real beekeeping by keeping bees.
+hook: Learn real beekeeping by doing it.
 summary: >-
   Learn real beekeeping by doing it. Built on real bee science, Queenright lets you open
   living hives, find the queen, count mites, head off swarms, raise queens and harvest honey

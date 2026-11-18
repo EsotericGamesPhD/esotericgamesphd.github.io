@@ -9,9 +9,10 @@ price: To be announced
 genre: Arcade monster basketball
 accent: "#ff8a1f"
 steam: 5535250
+discord: https://discord.gg/hpmaJrXQBK
 stores:
   - { label: Steam, url: "https://store.steampowered.com/app/5535250/" }
-hook: 90s-arcade monster basketball where the fouls are fatal.
+hook: 90s-arcade basketball where the players are monsters and the fouls are fatal.
 summary: >-
   90s-arcade 2-on-2 or 3-on-3 basketball where the players are monsters and the fouls are
   fatal. Chain trick dunks, arm Fatalities, bribe the ref and dunk on monsters through the

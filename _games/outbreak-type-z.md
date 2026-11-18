@@ -11,7 +11,7 @@ accent: "#3dff8f"
 steam: 4468060
 stores:
   - { label: Steam, url: "https://store.steampowered.com/app/4468060/Outbreak_Type_Z/" }
-hook: Type a zombie's word and it goes down. Or play it as a shooter.
+hook: Your keyboard is the gun. Don't want to type? Play it as a shooter.
 summary: >-
   Your keyboard is the gun. Type to drop zombies in an isometric city that rebuilds every
   run. A story campaign, LAST STAND horde survival and an endless mode, with deadly special

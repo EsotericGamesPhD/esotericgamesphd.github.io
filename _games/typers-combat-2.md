@@ -12,7 +12,7 @@ accent: "#e2283b"
 steam: 5431760
 stores:
   - { label: Steam, url: "https://store.steampowered.com/app/5431760/" }
-hook: "A 3D typing fighter: every correct key is a punch."
+hook: Every correct key is a punch. A 3D typing fighter.
 summary: >-
   Every correct key is a punch. Out-type your rival to land the hits, then end the match
   with a brutal cinematic execution, X-ray bone breaks included. A 3D typing fighter with a

@@ -23,7 +23,7 @@ features:
   - Live ranked PvP with ELO matchmaking and global leaderboards
   - "Ghost Battles: share a code and fight a friend's recorded run"
   - Cross-play with Android, where the game is free
-  - 50+ unlockable ASCII portraits, plus frames, colors and effects
+  - 50+ unlockable portraits for your ASCII warrior
 trailers:
   - { id: IhHbE_3vkW4, title: Official Trailer }
   - { id: 5LAaaWLn0pw, title: "Update Trailer: Free on Android" }
