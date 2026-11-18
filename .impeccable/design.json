@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T01:49:50Z",
+  "title": "Design System: Esoteric Games",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Midnight",
+        "canonical": "oklch(15.0% 0.039 275.3)",
+        "tonalRamp": [
+          "#090b12",
+          "#21232f",
+          "#3b3f4f",
+          "#585c71",
+          "#767c94",
+          "#989db4",
+          "#bec3d7",
+          "#eaeefe"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Deep Indigo",
+        "canonical": "oklch(18.1% 0.049 275.1)",
+        "tonalRamp": [
+          "#090a14",
+          "#202332",
+          "#3a3e52",
+          "#565c75",
+          "#757b9a",
+          "#969dba",
+          "#bdc3dc",
+          "#e9eeff"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Dusk Indigo",
+        "canonical": "oklch(22.0% 0.060 274.8)",
+        "tonalRamp": [
+          "#080a16",
+          "#1f2335",
+          "#393e57",
+          "#555c7b",
+          "#727ba1",
+          "#949cc0",
+          "#bbc3e1",
+          "#e7edff"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Studio Gold",
+        "canonical": "oklch(80.5% 0.164 78.2)",
+        "tonalRamp": [
+          "#1a0500",
+          "#3c1b00",
+          "#603400",
+          "#875000",
+          "#b06d00",
+          "#ce910e",
+          "#eeba66",
+          "#ffe8a8"
+        ]
+      },
+      "gold-hi": {
+        "role": "primary",
+        "displayName": "Lit Gold",
+        "canonical": "oklch(86.4% 0.150 85.2)",
+        "tonalRamp": [
+          "#170700",
+          "#361e00",
+          "#593900",
+          "#7e5500",
+          "#a57400",
+          "#c39728",
+          "#e4bf6e",
+          "#ffebad"
+        ]
+      },
+      "gold-soft": {
+        "role": "primary",
+        "displayName": "Banked Gold",
+        "canonical": "oklch(75.0% 0.134 81.0)",
+        "tonalRamp": [
+          "#170700",
+          "#361e00",
+          "#593800",
+          "#7e5500",
+          "#a57300",
+          "#c4963f",
+          "#e4be7a",
+          "#ffeab5"
+        ]
+      },
+      "frame": {
+        "role": "neutral",
+        "displayName": "Gold Hairline",
+        "canonical": "rgba(248, 176, 24, 0.55)",
+        "tonalRamp": [
+          "rgba(248, 176, 24, 0.06)",
+          "rgba(248, 176, 24, 0.12)",
+          "rgba(248, 176, 24, 0.18)",
+          "rgba(248, 176, 24, 0.22)",
+          "rgba(248, 176, 24, 0.35)",
+          "rgba(248, 176, 24, 0.55)",
+          "rgba(248, 176, 24, 0.7)",
+          "rgba(248, 176, 24, 0.85)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Gold Rule",
+        "canonical": "rgba(248, 176, 24, 0.18)",
+        "tonalRamp": [
+          "rgba(248, 176, 24, 0.06)",
+          "rgba(248, 176, 24, 0.12)",
+          "rgba(248, 176, 24, 0.18)",
+          "rgba(248, 176, 24, 0.22)",
+          "rgba(248, 176, 24, 0.35)",
+          "rgba(248, 176, 24, 0.55)",
+          "rgba(248, 176, 24, 0.7)",
+          "rgba(248, 176, 24, 0.85)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Starlight",
+        "canonical": "oklch(93.8% 0.017 301.2)",
+        "tonalRamp": [
+          "#0c0a0e",
+          "#252328",
+          "#413e45",
+          "#5f5c64",
+          "#7f7b86",
+          "#a09ca6",
+          "#c5c2cb",
+          "#efedf4"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Haze Lavender",
+        "canonical": "oklch(75.6% 0.039 277.1)",
+        "tonalRamp": [
+          "#090a12",
+          "#21232f",
+          "#3c3f4f",
+          "#595c71",
+          "#777c95",
+          "#999db4",
+          "#bfc3d7",
+          "#eaeefe"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Game name at the top of a press kit; fluid clamp(2.25rem, 5vw, 4rem), uppercase, gold."
+      },
+      "display-home": {
+        "displayName": "Display Home",
+        "purpose": "Homepage line beside the logo; fluid clamp(2rem, 3.1vw, 3rem), uppercase, gold."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings; fluid clamp(1.75rem, 3vw, 2.5rem), uppercase, gold."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Game name in the spotlight; fluid clamp(1.5rem, 2.2vw, 2rem), uppercase, starlight."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Game names in ledger rows."
+      },
+      "body-lg": {
+        "displayName": "Body Large",
+        "purpose": "Kit hook and summary."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text; 1rem under 720px; 52 to 64ch measures."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Meta lines, fact values, captions, footer notes."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, text actions, chips, ledger links; uppercase."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Top-bar links; uppercase, starlight."
+      },
+      "label-sm": {
+        "displayName": "Label Small",
+        "purpose": "Constellation band labels and footer heads; uppercase, banked gold."
+      },
+      "label-xs": {
+        "displayName": "Label XS",
+        "purpose": "Fact-list terms; uppercase, banked gold. The size floor."
+      }
+    },
+    "shadows": [],
+    "atmosphere": [
+      {
+        "name": "hero-haze",
+        "value": "radial-gradient(38% 55% at 14% 34%, rgba(248, 150, 8, 0.17), transparent 72%)",
+        "purpose": "Warm amber haze behind the homepage logo, from the brand banner."
+      },
+      {
+        "name": "kit-haze",
+        "value": "radial-gradient(55% 90% at 18% 0%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 72%)",
+        "purpose": "The game's own accent glowing down from the top of its press kit hero."
+      },
+      {
+        "name": "placeholder-glow",
+        "value": "radial-gradient(70% 90% at 50% 50%, color-mix(in srgb, var(--accent) 22%, #0c0f27), #0c0f27)",
+        "purpose": "Fill for art that does not exist yet."
+      },
+      {
+        "name": "accent-frame",
+        "value": "color-mix(in srgb, var(--accent) 70%, #f8b018)",
+        "purpose": "Spotlight art frame border (65% in the kit hero)."
+      },
+      {
+        "name": "topbar-glass",
+        "value": "rgba(7, 9, 27, 0.8) with backdrop-filter: blur(6px); rgba(7, 9, 27, 0.92) without blur support",
+        "purpose": "Sticky top bar separation."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid #ffca4d; outline-offset: 3px; border-radius: 2px",
+        "purpose": "Global keyboard focus."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing curve; every transform and cross-fade."
+      },
+      {
+        "name": "color-change",
+        "value": "0.2s to 0.3s",
+        "purpose": "Button fills, link and star-name color shifts."
+      },
+      {
+        "name": "star-transform",
+        "value": "0.6s ease; hover scale(1.18); selected rotate(45deg) scale(1.3)",
+        "purpose": "Constellation star response and selection."
+      },
+      {
+        "name": "spot-in",
+        "value": "0.5s ease; from opacity 0, translateY(8px)",
+        "purpose": "Spotlight cross-fade when a new star is chosen."
+      },
+      {
+        "name": "twinkle",
+        "value": "5s ease-in-out infinite, opacity 0.42 to 0.12, staggered delays",
+        "purpose": "Background sparkle field in the hero."
+      },
+      {
+        "name": "menu-turn",
+        "value": "0.4s ease; rotate(45deg) when open",
+        "purpose": "Sparkle on the mobile menu toggle."
+      },
+      {
+        "name": "trailer-hover",
+        "value": "poster scale(1.03) over 0.6s; play disc scale(1.08) over 0.3s",
+        "purpose": "Trailer facade hover."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition disabled; scroll-into-view jumps",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-column",
+        "value": "1080px"
+      },
+      {
+        "name": "phone",
+        "value": "720px"
+      },
+      {
+        "name": "menu",
+        "value": "440px"
+      }
+    ],
+    "icons": [
+      {
+        "name": "sparkle",
+        "viewBox": "-1 -1 2 2",
+        "path": "M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z",
+        "purpose": "The one ornament: star field, constellation, bullets, chips, menu toggle, placeholder art."
+      },
+      {
+        "name": "play",
+        "viewBox": "0 0 48 48",
+        "purpose": "Functional trailer play glyph only."
+      }
+    ],
+    "darkModeOnly": true
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid gold slab for the one main action in a block (Wishlist on Steam, Watch the newest trailer).",
+      "html": "<a class=\"ds-btn\" href=\"#\">Wishlist on Steam</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;background:var(--gold,#f8b018);color:var(--ink,#07091b);border:1.5px solid var(--gold,#f8b018);border-radius:4px;font:600 .9375rem/1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s;}.ds-btn:hover{background:var(--gold-hi,#ffca4d);border-color:var(--gold-hi,#ffca4d);color:var(--ink,#07091b);}.ds-btn:focus-visible{outline:2px solid var(--gold-hi,#ffca4d);outline-offset:3px;}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Gold-outlined midnight button for secondary actions (Watch trailer, Press kits, Download assets).",
+      "html": "<a class=\"ds-btn ds-btn-ghost\" href=\"#\">Watch trailer</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;background:var(--gold,#f8b018);color:var(--ink,#07091b);border:1.5px solid var(--gold,#f8b018);border-radius:4px;font:600 .9375rem/1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s;}.ds-btn:hover{background:var(--gold-hi,#ffca4d);border-color:var(--gold-hi,#ffca4d);color:var(--ink,#07091b);}.ds-btn:focus-visible{outline:2px solid var(--gold-hi,#ffca4d);outline-offset:3px;}.ds-btn-ghost{background:var(--ink,#07091b);color:var(--gold,#f8b018);}.ds-btn-ghost:hover{background:color-mix(in srgb,var(--gold,#f8b018) 12%,var(--ink,#07091b));color:var(--gold-hi,#ffca4d);}"
+    },
+    {
+      "name": "Top Bar Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky translucent midnight bar: cat mark and gold studio name left, four uppercase links right, gold rule below.",
+      "html": "<nav class=\"ds-topbar\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-mark\">EG</span><span>Esoteric Games</span></a><ul class=\"ds-nav\"><li><a href=\"#\">Games</a></li><li><a href=\"#\">Press</a></li><li><a href=\"#\">Synthient</a></li><li><a href=\"#\">Contact</a></li></ul></nav>",
+      "css": ".ds-topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 24px;background:rgba(7,9,27,.8);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule,rgba(248,176,24,.18));}.ds-brand{display:flex;align-items:center;gap:10px;color:var(--gold,#f8b018);text-decoration:none;font:600 1.05rem/1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.14em;text-transform:uppercase;}.ds-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:8px;background:var(--ink-2,#0c0f27);font-weight:700;letter-spacing:0;}.ds-nav{display:flex;gap:32px;list-style:none;margin:0;padding:0;}.ds-nav a{display:block;padding:10px 0;color:var(--text,#ece8f4);text-decoration:none;font:500 .9375rem/1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.1em;text-transform:uppercase;transition:color .2s;}.ds-nav a:hover{color:var(--gold,#f8b018);}.ds-nav a:focus-visible,.ds-brand:focus-visible{outline:2px solid var(--gold-hi,#ffca4d);outline-offset:3px;border-radius:2px;}"
+    },
+    {
+      "name": "Constellation Stars",
+      "kind": "custom",
+      "refersTo": "star",
+      "description": "Signature control: each game is a gold four-point star sized by release distance; hover swells it, the selected star turns 45 degrees and lights.",
+      "html": "<div class=\"ds-band\"><span class=\"ds-band-label\">Out now</span><ul class=\"ds-stars\"><li><a class=\"ds-star\" href=\"#\" aria-current=\"true\"><svg class=\"ds-sparkle\" viewBox=\"-1 -1 2 2\" aria-hidden=\"true\"><path d=\"M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z\"/></svg><span class=\"ds-star-name\">Typers Combat</span></a></li><li><a class=\"ds-star\" href=\"#\"><svg class=\"ds-sparkle\" viewBox=\"-1 -1 2 2\" aria-hidden=\"true\"><path d=\"M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z\"/></svg><span class=\"ds-star-name\">Typomon Hunter</span></a></li><li><a class=\"ds-star ds-star-works\" href=\"#\"><svg class=\"ds-sparkle\" viewBox=\"-1 -1 2 2\" aria-hidden=\"true\"><path d=\"M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z\"/></svg><span class=\"ds-star-name\">Queenright</span></a></li></ul></div>",
+      "css": ".ds-band{display:grid;grid-template-columns:112px 1fr;align-items:center;min-height:92px;background:var(--ink,#07091b);padding:0 16px;}.ds-band-label{color:var(--gold-soft,#d9a43a);font:600 .8125rem/1.2 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.14em;text-transform:uppercase;}.ds-stars{display:flex;justify-content:space-around;align-items:center;gap:8px;list-style:none;margin:0;padding:0;}.ds-star{display:grid;justify-items:center;gap:7px;padding:6px 8px;min-width:88px;color:var(--gold,#f8b018);text-decoration:none;border-radius:6px;}.ds-star .ds-sparkle{width:46px;height:46px;fill:currentColor;transition:transform .6s cubic-bezier(.16,1,.3,1),color .3s,opacity .3s;}.ds-star-works .ds-sparkle{width:22px;height:22px;opacity:.62;}.ds-star-name{color:var(--text,#ece8f4);font:600 .875rem/1.15 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.06em;text-transform:uppercase;text-align:center;max-width:13ch;transition:color .2s;}.ds-star:hover .ds-sparkle,.ds-star:focus-visible .ds-sparkle{transform:scale(1.18);opacity:1;}.ds-star:hover .ds-star-name,.ds-star:focus-visible .ds-star-name{color:var(--gold-hi,#ffca4d);}.ds-star:focus-visible{outline:2px solid var(--gold-hi,#ffca4d);outline-offset:3px;}.ds-star[aria-current=true] .ds-sparkle{color:var(--gold-hi,#ffca4d);opacity:1;transform:rotate(45deg) scale(1.3);}.ds-star[aria-current=true] .ds-star-name{color:var(--gold-hi,#ffca4d);}@media (prefers-reduced-motion:reduce){.ds-star .ds-sparkle,.ds-star-name{transition:none;}}"
+    },
+    {
+      "name": "Spotlight",
+      "kind": "card",
+      "refersTo": "art-frame",
+      "description": "The selected game: accent-tinted gold-hairline art frame beside title, status meta, hook and the three-tier action row.",
+      "html": "<article class=\"ds-spot\" style=\"--accent:#9be03c\"><div class=\"ds-frame\"><div class=\"ds-art\"></div></div><div class=\"ds-spot-body\"><h3 class=\"ds-spot-title\">Graftlands</h3><p class=\"ds-meta\"><b>Early Access, coming soon</b> / PC (Steam)</p><p class=\"ds-hook\">A body-grid auto-battler: your mutant's body is the inventory.</p><p class=\"ds-actions\"><a class=\"ds-link\" href=\"#\">Press kit</a></p></div></article>",
+      "css": ".ds-spot{display:grid;grid-template-columns:minmax(180px,260px) 1fr;gap:24px;align-items:center;padding:20px;background:var(--ink,#07091b);}.ds-frame{border:1.5px solid color-mix(in srgb,var(--accent,#f8b018) 70%,var(--gold,#f8b018));border-radius:5px;overflow:hidden;background:var(--ink-2,#0c0f27);aspect-ratio:616/353;}.ds-art{height:100%;background:radial-gradient(70% 90% at 50% 50%,color-mix(in srgb,var(--accent,#f8b018) 22%,var(--ink-2,#0c0f27)),var(--ink-2,#0c0f27));}.ds-spot-body{display:grid;gap:10px;}.ds-spot-title{margin:0;color:var(--text,#ece8f4);font:600 2rem/1.1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.04em;text-transform:uppercase;}.ds-meta{margin:0;color:var(--muted,#a9aec9);font:400 .9375rem/1.4 var(--body,'Barlow',sans-serif);}.ds-meta b{color:var(--text,#ece8f4);font-weight:600;}.ds-hook{margin:0;color:var(--text,#ece8f4);font:400 1.0625rem/1.6 var(--body,'Barlow',sans-serif);max-width:52ch;}.ds-actions{margin:4px 0 0;}.ds-link{color:var(--gold,#f8b018);font:600 .9375rem/1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.08em;text-transform:uppercase;text-underline-offset:.2em;}.ds-link:hover{color:var(--gold-hi,#ffca4d);}.ds-link:focus-visible{outline:2px solid var(--gold-hi,#ffca4d);outline-offset:3px;}"
+    },
+    {
+      "name": "Ledger Row with Fact List",
+      "kind": "custom",
+      "refersTo": "fact-label",
+      "description": "One catalog entry: title and hook, then status, release, platforms and price in banked-gold caps over values, between gold rules.",
+      "html": "<div class=\"ds-row\"><div><h3 class=\"ds-row-title\">Queenright</h3><p class=\"ds-row-hook\">Learn real beekeeping by keeping bees.</p></div><dl class=\"ds-facts\"><div><dt>Status</dt><dd>Coming soon</dd></div><div><dt>Release</dt><dd>Coming soon</dd></div><div><dt>Platforms</dt><dd>PC (Steam)</dd></div><div><dt>Price</dt><dd>To be announced</dd></div></dl></div>",
+      "css": ".ds-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:18px 28px;align-items:center;padding:22px 16px;background:var(--ink,#07091b);border-block:1px solid var(--rule,rgba(248,176,24,.18));}.ds-row-title{margin:0;color:var(--text,#ece8f4);font:600 1.375rem/1.1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.04em;text-transform:uppercase;}.ds-row-hook{margin:6px 0 0;color:var(--muted,#a9aec9);font:400 1rem/1.6 var(--body,'Barlow',sans-serif);}.ds-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 18px;margin:0;}.ds-facts dt{color:var(--gold-soft,#d9a43a);font:600 .75rem/1.3 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.12em;text-transform:uppercase;}.ds-facts dd{margin:3px 0 0;color:var(--text,#ece8f4);font:400 .9375rem/1.4 var(--body,'Barlow',sans-serif);}"
+    },
+    {
+      "name": "Trailer Facade",
+      "kind": "custom",
+      "refersTo": "trailer-play-icon",
+      "description": "16:9 poster in a gold hairline frame with a gold ring play glyph on a midnight disc; loads the video only when played.",
+      "html": "<figure class=\"ds-trailer\"><a class=\"ds-play\" href=\"#\"><span class=\"ds-poster\"></span><svg class=\"ds-play-icon\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><circle cx=\"24\" cy=\"24\" r=\"23\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M19 15.5v17l14-8.5z\" fill=\"currentColor\"/></svg><span style=\"position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)\">Play Announcement Trailer</span></a><figcaption>Announcement Trailer <a href=\"#\">Open on YouTube</a></figcaption></figure>",
+      "css": ".ds-trailer{margin:0;max-width:460px;}.ds-play{position:relative;display:block;aspect-ratio:16/9;background:var(--ink-3,#131736);color:var(--gold,#f8b018);overflow:hidden;border:1.5px solid var(--frame,rgba(248,176,24,.55));border-radius:5px;}.ds-poster{position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 40%,#3a2a12,var(--ink-3,#131736));transition:transform .6s cubic-bezier(.16,1,.3,1);}.ds-play-icon{position:absolute;left:50%;top:50%;width:68px;height:68px;transform:translate(-50%,-50%);background:rgba(7,9,27,.72);border-radius:50%;transition:transform .3s cubic-bezier(.16,1,.3,1);}.ds-play:hover .ds-poster{transform:scale(1.03);}.ds-play:hover .ds-play-icon{transform:translate(-50%,-50%) scale(1.08);color:var(--gold-hi,#ffca4d);}.ds-play:focus-visible{outline:2px solid var(--gold-hi,#ffca4d);outline-offset:3px;}.ds-trailer figcaption{display:flex;justify-content:space-between;gap:6px 16px;padding-top:10px;color:var(--muted,#a9aec9);font:400 .9375rem/1.4 var(--body,'Barlow',sans-serif);}.ds-trailer figcaption a{color:var(--gold,#f8b018);text-underline-offset:.2em;}"
+    },
+    {
+      "name": "Sparkle Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Links to the other games at the foot of a press kit: rule-bordered caps led by a small gold sparkle.",
+      "html": "<ul class=\"ds-chips\"><li><a class=\"ds-chip\" href=\"#\"><svg class=\"ds-sparkle\" viewBox=\"-1 -1 2 2\" aria-hidden=\"true\"><path d=\"M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z\"/></svg>Typers Combat</a></li><li><a class=\"ds-chip\" href=\"#\"><svg class=\"ds-sparkle\" viewBox=\"-1 -1 2 2\" aria-hidden=\"true\"><path d=\"M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z\"/></svg>Splatterdunk</a></li></ul>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px 14px;list-style:none;margin:0;padding:0;}.ds-chip{display:inline-flex;align-items:center;gap:9px;padding:10px 14px;border:1px solid var(--rule,rgba(248,176,24,.18));border-radius:4px;color:var(--text,#ece8f4);text-decoration:none;font:600 .9375rem/1 var(--display,'Barlow Semi Condensed',sans-serif);letter-spacing:.06em;text-transform:uppercase;transition:border-color .2s,color .2s;}.ds-chip .ds-sparkle{width:13px;height:13px;fill:var(--gold,#f8b018);}.ds-chip:hover{border-color:var(--frame,rgba(248,176,24,.55));color:var(--gold-hi,#ffca4d);}.ds-chip:focus-visible{outline:2px solid var(--gold-hi,#ffca4d);outline-offset:3px;}"
+    },
+    {
+      "name": "Sparkle Highlights List",
+      "kind": "custom",
+      "refersTo": "fact-label",
+      "description": "Kit highlight bullets: each item on a gold rule, marked by a 12px gold four-point sparkle instead of a dot.",
+      "html": "<ul class=\"ds-features\"><li><svg class=\"ds-sparkle\" viewBox=\"-1 -1 2 2\" aria-hidden=\"true\"><path d=\"M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z\"/></svg>Light the smoker, lift frames and read the comb cell by cell</li><li><svg class=\"ds-sparkle\" viewBox=\"-1 -1 2 2\" aria-hidden=\"true\"><path d=\"M0-1C.09-.27.27-.09 1 0 .27.09.09.27 0 1-.09.27-.27.09-1 0-.27-.09-.09-.27 0-1Z\"/></svg>Find and mark the queen, and keep a real inspection sheet</li></ul>",
+      "css": ".ds-features{margin:0;padding:0 16px;list-style:none;max-width:62ch;background:var(--ink,#07091b);color:var(--text,#ece8f4);font:400 1.0625rem/1.6 var(--body,'Barlow',sans-serif);}.ds-features li{position:relative;padding:9px 0 9px 26px;border-top:1px solid var(--rule,rgba(248,176,24,.18));}.ds-features .ds-sparkle{position:absolute;left:1px;top:.95em;width:12px;height:12px;fill:var(--gold,#f8b018);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Sky of Strange Ideas",
+    "overview": "The studio is a midnight sky and its games are the stars in it. The world comes straight from the brand banner and the cat-and-keyboard logo: a deep blue-black ground, a warm amber haze behind the mark, hand-placed four-point gold sparkles at many sizes, and thin gold hairlines framing each game's capsule art. Gold is the studio speaking. Everything else that carries color (a beekeeping sim's honey, a fighting game's blood red, an auto-battler's acid green) arrives inside a game's own art, held in a gold frame, so a cozy sim and a gore-on fighter can share a page without either one taking over.\n\nDensity is calm and press-ready. Type is either a wide-tracked semi-condensed capital that names and labels things (the banner's tagline voice) or a plain humanist sans that is read. Surfaces are flat midnight planes separated by faint gold rules, never by shadow. Motion is small and celestial: stars twinkle in the background, a hovered star swells, a chosen star turns a quarter-step and brightens while its game cross-fades into the spotlight.\n\nThe system replaces the studio's earlier neon terminal look (glowing type, grid backgrounds, blinking cursors, typing-game chrome). That look described one game; this one holds the whole catalog. It is dark only, by brand.",
+    "keyCharacteristics": [
+      "Midnight ground in three tonal steps; no light theme.",
+      "Gold as the single studio voice: headings, actions, links, stars, frames.",
+      "Per-game color lives only in art, art frames and atmospheric haze.",
+      "The four-point sparkle is the one ornament, icon and bullet.",
+      "Wide-tracked uppercase Barlow Semi Condensed for every name and label; Barlow for reading.",
+      "Hairline gold frames (1.5px, 5px radius) around all game art, exactly like the banner.",
+      "Flat, shadowless depth built from tone, haze and rules."
+    ],
+    "rules": [
+      {
+        "name": "The One Voice Rule",
+        "body": "Gold is the only color the studio itself speaks in. If a piece of UI chrome is not midnight, starlight, lavender or gold, it is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Accent Stays in the Frame Rule",
+        "body": "A game's accent tints its art frame and its haze, never text, buttons, labels, links or stars. The studio frame stays neutral enough to hold every game.",
+        "section": "colors"
+      },
+      {
+        "name": "The Midnight Only Rule",
+        "body": "The site declares a dark color scheme and has no light mode. Do not add one; the night sky is the brand.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Anything that names or labels (headings, nav, buttons, star names, fact terms, band labels) is Barlow Semi Condensed in uppercase with positive tracking. Anything that is read is Barlow in sentence case with no tracking. Never mix the two in one element.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tracking Ladder Rule",
+        "body": "Tracking widens as type shrinks: 0.04em at display and titles, 0.05em at headlines, 0.06 to 0.08em at buttons and chips, 0.1em at nav, 0.12 to 0.14em at the smallest labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "No box-shadow or text-shadow anywhere, at rest or on hover. If something needs to stand forward, give it a gold hairline, a Deep Indigo plane or a haze behind it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Banner Frame Rule",
+        "body": "Every piece of game art (spotlight, ledger, kit hero, screenshots, trailer facades, the Synthient video) sits inside a 1.5px gold hairline at 5px radius on a Deep Indigo fill, with the image clipped to it.",
+        "section": "shapes"
+      },
+      {
+        "name": "The One Star Rule",
+        "body": "The four-point sparkle is the only ornament and the only bullet. Do not introduce other icon sets, emoji or decorative glyphs.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep the ground Midnight (#07091b) and raise only to Deep Indigo (#0c0f27); the site is dark only.",
+      "Do speak in Studio Gold (#f8b018) for headings, actions, links and stars, and move to Lit Gold (#ffca4d) for hover, focus and selection.",
+      "Do put every piece of game art in a 1.5px Gold Hairline frame at 5px radius on Deep Indigo.",
+      "Do let a game's accent tint only its art frame and its haze.",
+      "Do set every name and label in uppercase Barlow Semi Condensed with tracking from 0.04em (large) to 0.14em (smallest), and every reading line in Barlow sentence case.",
+      "Do use the four-point sparkle as the only ornament, bullet and decorative icon.",
+      "Do divide content with 1px Gold Rules (rgba(248, 176, 24, 0.18)) rather than boxes.",
+      "Do list the catalog as ledger rows with art, hook, facts and links.",
+      "Do animate with cubic-bezier(0.16, 1, 0.3, 1) and disable all motion under prefers-reduced-motion.",
+      "Do keep stars, trailers and the menu working as plain links without JavaScript."
+    ],
+    "donts": [
+      "Don't add a light theme.",
+      "Don't use box-shadow or text-shadow glows; the earlier neon terminal look is retired.",
+      "Don't bring back terminal chrome: grid backgrounds, blinking cursors, monospace \"code\" styling or typing-game motifs as studio identity.",
+      "Don't use a game's accent for text, buttons, labels, links or stars.",
+      "Don't introduce a second brand color, gradients on buttons, or colored section backgrounds beyond Deep Indigo.",
+      "Don't add other icon sets or emoji; the sparkle and the functional play glyph are the whole vocabulary.",
+      "Don't lay the catalog out as a row of equal tiles or cards.",
+      "Don't set a small uppercase label above a heading as a kicker or eyebrow.",
+      "Don't set any text below 0.75rem."
+    ]
+  }
+}
