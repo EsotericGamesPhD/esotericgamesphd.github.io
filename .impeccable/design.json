@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-18T01:49:50Z",
+  "generatedAt": "2026-11-18T02:42:44Z",
   "title": "Design System: Esoteric Games",
   "extensions": {
     "colorMeta": {
@@ -305,6 +305,50 @@
         "name": "play",
         "viewBox": "0 0 48 48",
         "purpose": "Functional trailer play glyph only."
+      }
+    ],
+    "brandAssets": [
+      {
+        "name": "logo-full",
+        "file": "assets/brand/esoteric-games-logo.png",
+        "size": "1254x1254",
+        "purpose": "Official studio logo, press download."
+      },
+      {
+        "name": "logo-512",
+        "file": "assets/brand/esoteric-games-logo-512.png",
+        "size": "512x512",
+        "purpose": "Official studio logo, smaller press download."
+      },
+      {
+        "name": "logo-web",
+        "file": "assets/brand/logo-560.webp",
+        "size": "560x560",
+        "purpose": "Hero and footer logo, lighten-blended."
+      },
+      {
+        "name": "nav-mark",
+        "file": "assets/brand/nav-mark.png",
+        "size": "96x96 shown at 40px, 8px radius",
+        "purpose": "Top bar mark."
+      },
+      {
+        "name": "apple-touch-icon",
+        "file": "apple-touch-icon.png",
+        "size": "180x180",
+        "purpose": "Home screen icon."
+      },
+      {
+        "name": "favicon",
+        "file": "favicon.ico",
+        "size": "32x32",
+        "purpose": "Browser tab icon."
+      },
+      {
+        "name": "banner",
+        "file": "assets/brand/youtube-banner.jpg",
+        "size": "1280x720",
+        "purpose": "Source of the world: midnight, amber haze, gold sparkles, hairline frames."
       }
     ],
     "darkModeOnly": true

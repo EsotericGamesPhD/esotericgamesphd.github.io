@@ -320,7 +320,7 @@ p { margin: 0; }
 .footer-logo { width: 130px; mix-blend-mode: lighten; }
 .footer-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
 .footer-head { color: var(--gold); font: 600 0.875rem/1.2 var(--display); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px; }
-.footer .plain a, .footer p a { display: inline-block; padding: 6px 0; }
+.footer .plain a, .footer p a { display: inline-block; padding: 10px 0; }
 .footer .muted { font-size: 0.9375rem; margin-top: 4px; }
 .footer a { overflow-wrap: anywhere; }
 .copyright { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter) 32px; color: var(--muted); font-size: 0.875rem; }

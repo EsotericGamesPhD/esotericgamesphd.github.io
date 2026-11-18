@@ -256,7 +256,7 @@ Each game declares one accent hex in its data file (for example a crimson, an ac
 
 Content sits in a centered 1240px wrap with a fluid side gutter of clamp(16px, 4vw, 40px). Sections breathe with clamp(64px, 9vw, 112px) of vertical padding; kit sections use clamp(56px, 7vw, 88px). Inner rhythm is built from 4, 8, 12, 16, 20 and 28px steps (gaps of 12 to 20px inside blocks, 28px between grid tracks, clamp(28px, 5vw, 72px) between major columns).
 
-- **Homepage hero:** a two-column grid (minmax(280px, 0.8fr) and 2fr) filling the first viewport (min(100svh minus the bar, 900px)). Left: logo, line, lede, two stacked actions. Right: the constellation and its spotlight. A background field of 32 hand-placed sparkles covers the hero, masked clear around the intro so it never sits under text.
+- **Homepage hero:** a two-column grid (minmax(280px, 0.8fr) and 2fr) filling the first viewport (min(100svh minus the bar, 900px)). Left: logo, line, lede, two stacked actions. Right: the constellation and its spotlight. A background field of 32 hand-placed sparkles (5 to 26px) covers the hero, masked clear around the intro column so it never sits under text.
 - **Constellation:** bands are rows with a 112px label column and a spaced star field; each star is nudged up or down a few pixels for an irregular, hand-placed line. Faint gold lines (1px, 22% opacity) are drawn through each band's stars.
 - **Ledger:** the full catalog is an ordered list of rows, not a card grid: framed art (200px), title and hook, a four-column fact list, and stacked text links, divided by gold rules.
 - **Press kit pages:** a hero of framed art beside the title and actions, then a two-column body (fact sheet beside about), then full-width trailer and screenshot grids, then a wrap of chips to the other games.
@@ -285,6 +285,9 @@ The four-point sparkle (a single SVG symbol, concave-sided, drawn in a -1 to 1 v
 
 ## Components
 
+### Logo
+The official studio logo (a cat over the letters EG and a keyboard, with the ESOTERIC GAMES lockup) is the only studio mark. It appears full in the homepage hero (clamp(150px, 15vw, 210px), 128px on phones) and the footer (130px), lighten-blended into the midnight ground. The top bar carries the 40px nav mark (8px radius). The favicon (32px), apple touch icon (180px) and the downloadable press files (1254px and 512px PNG) all come from the same official artwork. Never redraw, recolor or substitute a wordmark for it.
+
 ### Buttons
 Confident gold slabs, set in caps.
 - **Shape:** gently squared (4px), 1.5px border, minimum height 46px, 20px side padding.
@@ -306,7 +309,7 @@ Confident gold slabs, set in caps.
 - **Internal Padding:** notes 14px by 16px; framed media has none, captions inside a frame get 10px by 14px.
 
 ### Navigation
-- **Top bar:** sticky, translucent Midnight with blur, Gold Rule below. Left: the 40px cat mark (8px radius) and the studio name in gold caps. Right: four links (Games, Press, Synthient, Contact) in Nav type, Starlight, turning gold on hover.
+- **Top bar:** sticky, translucent Midnight with blur, Gold Rule below. Left: the 40px nav mark (8px radius) and the studio name in gold caps. Right: four links (Games, Press, Synthient, Contact) in Nav type, Starlight, turning gold on hover.
 - **Mobile:** under 440px with JavaScript, a ghost-style "Menu" toggle (1.5px Gold Hairline, 4px radius, 44px tall, gold caps led by a sparkle) opens a full-width Midnight panel of links divided by Gold Rules; the toggle's sparkle turns 45 degrees when open. Escape closes it.
 - **Skip link:** a gold slab with Midnight text that drops in at the top-left on focus.
 
